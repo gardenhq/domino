@@ -1,0 +1,35 @@
+{
+  "name": "@gardenhq/domino",
+  "version": "1.0.0",
+  "description": "DOM dependency injection descriptors for @gardenhq/willow and @gardenhq/o",
+  "author": {
+    "name": "GardenHQ",
+    "email": "gardener@gardenhq.io",
+    "url": "https://gardenhq.io/"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gardenhq/domino.git"
+  },
+  "devDependencies": {
+    "@gardenhq/js-test-harness": "^2.2.0",
+    "@gardenhq/o": "^6.3.0",
+    "@gardenhq/tick-control": "^1.0.0",
+    "hyperscript": "^2.0.2",
+    "hyperx": "^2.3.0",
+    "mocha": "^3.3.0",
+    "mocha-multi": "^0.11.0"
+  },
+  "keywords": [],
+  "publishConfig": {},
+  "scripts": {
+    "test": "mkdir -p ./test/results && npm run story",
+    "story": "mocha --recursive -R mocha-multi --reporter-options tap=./test/results/story/mocha.tap,spec=- \"./test/story/**/*.js\""
+  },
+  "optionalDependencies": {
+    "min-document": "^2.19.0",
+    "unfetch": "^2.1.2",
+    "xhr2": "^0.1.4"
+  }
+}

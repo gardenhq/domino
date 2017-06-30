@@ -1,0 +1,12 @@
+*
+
+!/class/**
+!/location/**
+!/polyfill/**
+!/window/**
+
+!/bin/**
+!/*.js
+!/package.json
+!/README.md
+!/LICENSE
